@@ -15,6 +15,10 @@
 		369B57752ADAB8E700C5674D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B57742ADAB8E700C5674D /* Main.swift */; };
 		369B57782ADABB1600C5674D /* ActiveNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B57772ADABB1600C5674D /* ActiveNow.swift */; };
 		369B577A2ADABCBB00C5674D /* IndexRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B57792ADABCBB00C5674D /* IndexRow.swift */; };
+		369B577D2ADAC1E000C5674D /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B577C2ADAC1E000C5674D /* NewMessage.swift */; };
+		369B57822ADAC4C800C5674D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B57812ADAC4C800C5674D /* Profile.swift */; };
+		369B57842ADAC66300C5674D /* Settingoptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B57832ADAC66300C5674D /* Settingoptions.swift */; };
+		369B57862ADAC9CB00C5674D /* profileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B57852ADAC9CB00C5674D /* profileViewModel.swift */; };
 		36CCF7FE2ADA9B7E008839A0 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CCF7FD2ADA9B7E008839A0 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,10 @@
 		369B57742ADAB8E700C5674D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		369B57772ADABB1600C5674D /* ActiveNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNow.swift; sourceTree = "<group>"; };
 		369B57792ADABCBB00C5674D /* IndexRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexRow.swift; sourceTree = "<group>"; };
+		369B577C2ADAC1E000C5674D /* NewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
+		369B57812ADAC4C800C5674D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		369B57832ADAC66300C5674D /* Settingoptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settingoptions.swift; sourceTree = "<group>"; };
+		369B57852ADAC9CB00C5674D /* profileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewModel.swift; sourceTree = "<group>"; };
 		36CCF7FD2ADA9B7E008839A0 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +106,8 @@
 		363CBC8B2ADA838C00152654 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				369B577E2ADAC4B100C5674D /* profile */,
+				369B577B2ADAC1D100C5674D /* ViewMessage */,
 				369B57762ADABB0300C5674D /* ActiveNow */,
 				369B57732ADAB8D400C5674D /* Index */,
 				363CBC902ADA83BE00152654 /* Root */,
@@ -160,6 +170,40 @@
 				369B57772ADABB1600C5674D /* ActiveNow.swift */,
 			);
 			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		369B577B2ADAC1D100C5674D /* ViewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				369B577C2ADAC1E000C5674D /* NewMessage.swift */,
+			);
+			path = ViewMessage;
+			sourceTree = "<group>";
+		};
+		369B577E2ADAC4B100C5674D /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				369B57802ADAC4BE00C5674D /* ViewModel */,
+				369B577F2ADAC4B700C5674D /* View */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		369B577F2ADAC4B700C5674D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				369B57812ADAC4C800C5674D /* Profile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		369B57802ADAC4BE00C5674D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				369B57832ADAC66300C5674D /* Settingoptions.swift */,
+				369B57852ADAC9CB00C5674D /* profileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +278,14 @@
 			files = (
 				369B57752ADAB8E700C5674D /* Main.swift in Sources */,
 				362C63E52ADA8622004A7CBD /* LoginView.swift in Sources */,
+				369B577D2ADAC1E000C5674D /* NewMessage.swift in Sources */,
+				369B57862ADAC9CB00C5674D /* profileViewModel.swift in Sources */,
 				369B57782ADABB1600C5674D /* ActiveNow.swift in Sources */,
 				363CBC7E2ADA832D00152654 /* ContentView.swift in Sources */,
+				369B57842ADAC66300C5674D /* Settingoptions.swift in Sources */,
 				363CBC7C2ADA832D00152654 /* MessengerUiApp.swift in Sources */,
 				369B577A2ADABCBB00C5674D /* IndexRow.swift in Sources */,
+				369B57822ADAC4C800C5674D /* Profile.swift in Sources */,
 				36CCF7FE2ADA9B7E008839A0 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

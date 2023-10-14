@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Main: View {
+    @State private var ShowScreen=false
     var body: some View {
         NavigationStack{
             ScrollView{
@@ -21,7 +22,10 @@ struct Main: View {
                 .listStyle(PlainListStyle())
                 .frame(height: UIScreen.main.bounds.height - 120, alignment:.leading)
                 
-            }.toolbar{
+            }.fullScreenCover(isPresented: $ShowScreen, content: {
+                NewMessage()
+            })
+            .toolbar{
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
                         Image(systemName: "person.circle.fill")
@@ -34,6 +38,7 @@ struct Main: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         // Message
+                        ShowScreen.toggle()
                     } label: {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()
